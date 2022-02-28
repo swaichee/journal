@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-minute gratitude journal</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script defer src="src/index.js"></script>
+  </head>
+  <body>
+    <form>
+      <div class="container-grid">
+        <div class="grid-col-span-3 title">5-minutes gratitude journal</div>
+
+        <div class="item grid-col-span-3 justified">
+          <textarea class="graditude__body"
+            id="graditude"
+            placeholder=""
+           
+          ></textarea>
+        </div>
+
+        <div class="item">
+          <div>
+            <label>Gratitude entry for: </label>
+            <input
+              type="radio"
+              id="morning"
+              name="entrytype"
+              onchange="toggleInstructions(this);"
+              value="morning"
+            />
+            <label for="morning">morning</label>
+
+            <input
+              type="radio"
+              id="eveninng"
+              name="entrytype"
+              onchange="toggleInstructions(this);"
+              value="evening"
+            />
+            <label for="evening">evening</label>
+          </div>
+        </div>
+
+        <div class="item">
+          <label>Date:</label>
+          <input id="entryDate" type="date"  />
+        </div>
+
+        <!-- div class="item">instructions</div -->
+        <div id="add" class="item justified">
+          <button>Add Card</button>
+        </div>
+      </div>
+    </form>
+    <hr
+      style="height: 3px; border-width: 0; color: gray; background-color: gray"
+    />
+    <div id="journal-container" class="journal-grid">
+       <!--
+      <div class="grid-col-span-4 title">My graditude journal</div>
+
+     
+      <div class="journal-card journal-card-morning div.transbox">
+        <p class="body-morning-text div.transbox">I am grateful that I have the opportunity to learn JavaScript! Because each value in the Set has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the === operator. Specifically, for Sets, +0 (which is strictly equal to -0) and -0 were different values. However, this was changed in the ECMAScript 2015 specification. See "Key equality for -0 and 0" in the browser compatibility table for details.
+        </p>
+        <div class="journal-card-updated">
+          <button id="del" type="button" class="button">
+              <span class="journal-card-updated">2022/02/27</span>
+              <span class="button-icon"><ion-icon name="trash"></ion-icon></span>
+          </button>
+        </div>
+      </div>
+
+        <div class="journal-card journal-card-evening div.transbox">
+          <p class="body-evening-text">I am grateful that I have the opportunity to learn JavaScript! Because each value in the Set has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the === operator. Specifically, for Sets, +0 (which is strictly equal to -0) and -0 were different values. However, this was changed in the ECMAScript 2015 specification. See "Key equality for -0 and 0" in the browser compatibility table for details.
+          </p>
+          <div class="journal-card-updated">
+            <button id="del" type="button" class="button">
+              <span class="journal-card-updated">2022/02/27</span>
+              <span class="button-icon">
+                <ion-icon name="trash"></ion-icon>
+              </span>
+            </button>
+          </div>
+        </div> 
+
+        -->
+        <!--button type="button" class="button">
+            <span class="journal-card-updated">2022/02/27</span>
+            <span class="button-icon">
+              <ion-icon name="trash"></ion-icon>
+            </span>
+          </button-->
+
+        <!--div class="journal-card-evening">I am grateful that I have the opportunity to learn JavaScript! Because each value in the Set has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the === operator. Specifically, for Sets, +0 (which is strictly equal to -0) and -0 were different values. However, this was changed in the ECMAScript 2015 specification. See "Key equality for -0 and 0" in the browser compatibility table for details.
+        </div>
+        <div class="journal-card-morning">morning</div>
+        <div class="journal-card-evening">evening</div>
+        <div class="journal-card-evening">evening</div>
+
+      </div-->
+
+     
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
